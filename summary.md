@@ -67,6 +67,18 @@ df.tail()
 df.sample()
 ```
 
+##### (1.1) Configure display settings
+
+Often when printing a larger DataFrame, pandas will not show all columns or rows specified. 
+These settings can be changed howewer with the ```set_option``` command. 
+
+```python
+import pandas as pd
+pd.set_option('display.max_rows', 500)      # setting max rows displayed to 500
+pd.set_option('display.max_columns', 500)   # setting max cols displayed to 500
+pd.set_option('display.width', 1000)        # setting max width for displaying output to 1000
+```
+
 ##### (2): shape, columns, index, info, describe
 
 - ```df.shape``` returns the dimensions of the DataFrame
