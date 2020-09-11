@@ -44,7 +44,7 @@ git config --global user.name "martinthoma"
 git gonfig --global user.email "martinthoma@email.de"
 ```
 
-##### read username and emai
+##### read username and email
 ```shell
 git config user.name
 git config user.email
@@ -120,6 +120,15 @@ git push [-u] [<repository>] [<branch>]
                                                 # when changes happen to the branch
 git push -u origin master                       # track the branch (-u) to the origin reporitory to the master branch
 ```
+
+### overwrite local changes with data from remote repository
+All local changes will be lost with this method! 
+```shell
+git fetch --all
+
+git reset --hard origin/master
+```
+
 
 ### The git graph
 Getting the git graph showing branches and merges
